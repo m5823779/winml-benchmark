@@ -120,7 +120,7 @@ int main(int argc, char* argv[]) {
     sessionOptions.OverrideNamedDimension(L"input_cy", input_width);
     sessionOptions.BatchSizeOverride(1);
 
-    session = LearningModelSession(model, device);
+    session = LearningModelSession(model, device, sessionOptions);
     LearningModelBinding binding(session);
 
     // Define input shape
